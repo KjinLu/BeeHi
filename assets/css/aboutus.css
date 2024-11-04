@@ -438,6 +438,8 @@ img{
 }
 
 .menu__content{
+  overflow: hidden;
+
   position: relative;
   display: flex;
   flex-direction: column;
@@ -449,9 +451,16 @@ img{
 
 .menu__img{
   width: 100px;
+  height: auto;
   align-self: center;
   border-radius: 50%;
   margin-bottom: var(--mb-2);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+.menu__content:hover::before {
+  opacity: 1;
 }
 
 .menu__name, .menu__preci{

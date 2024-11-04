@@ -423,10 +423,13 @@ img{
 }
 
 .services__img{
-  width: 64px;
-  height: 64px;
   fill: var(--first-color);
   margin-bottom: var(--mb-2);
+}
+
+.services__img img{
+  width: 100%;
+  width: 100%;
 }
 
 .services__title{
@@ -436,7 +439,7 @@ img{
 }
 
 .services__description{
-  padding: 0 1.5rem;
+  text-align: justify;
 }
 
 .menu__container{

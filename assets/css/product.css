@@ -35,7 +35,7 @@
   --text-color: #707070;
   --text-color-light: #A6A6A6;
   --body-color: #FFFBE6;
-  --container-color: #FFFFFF;
+  --container-color: #ffffff;
   --field-color: #ececec;
   --body-font: "CustomFont", sans-serif;
   --dance-font: "DancingFont", sans-serif;
@@ -478,7 +478,12 @@ img{
 .menu__name{
     text-transform: uppercase;
     padding-top: 20px;
+    font-size: 1.5rem;
     border-top: 1px solid var(--title-color);
+}
+
+.menu__preci{
+  font-size: 1.2rem;
 }
 
 .menu__detail, .menu__preci{

@@ -132,6 +132,7 @@ img{
 }
 
 .section-title{
+  font-family: "CustomFont";
   font-size: var(--h1-font-size);
   color: var(--title-color);
   margin-bottom: var(--mb-3);
@@ -483,6 +484,8 @@ img{
 }
 
 .menu__preci{
+  font-family: "DancingFont";
+
   font-size: 1.2rem;
 }
 
@@ -811,13 +814,14 @@ textarea{
     height: calc(var(--header-height) + 1.5rem);
   }
   .main_item{
-    font-size: 1.8rem;
+    font-size: 1.8rem !important; 
   }
   .nav__list{
     display: flex;
     align-items: center;
   }
   .nav__item{
+    font-size: 1.1rem;
     margin-left: var(--mb-5);
     margin-bottom: 0;
   }
@@ -939,8 +943,8 @@ textarea{
   }
   
   .swiper-slide img {
-    width: 100%;
-    justify-self: center;
+    min-height: 100%;
+    object-fit: center;
   }
 
   .contact__container{

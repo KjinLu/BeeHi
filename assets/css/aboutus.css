@@ -26,6 +26,7 @@
 }
 
 :root {
+  --invert-img: invert(0);
   --header-height: 3.2rem;
   --first-color: #19a577;
   --first-color-alt: #10ac78;
@@ -79,6 +80,7 @@ html{
 }
 
 body.dark-theme{
+  --invert-img: invert(1);
   --title-color: #FFFBE6;
   --button-text-color: #FFFBE6;
   --button-color: #1D2521;
@@ -132,6 +134,8 @@ img{
 }
 
 .section-title{
+  font-family: var(--body-font);
+
   font-size: var(--h1-font-size);
   color: var(--title-color);
   margin-bottom: var(--mb-3);
@@ -299,7 +303,17 @@ img{
   color: var(--title-color);
 }
 
+.tittle_plastic{
+  font-family: var(--body-font);
+
+  font-size: 4rem;
+  color: var(--title-color);
+  margin-bottom: 50px;
+}
+
 .home__inspired{
+  font-family: var(--body-font);
+
     font-size: 3rem;
     color: var(--title-color);
   }
@@ -357,6 +371,11 @@ img{
   z-index: 1; /* Giúp chữ nổi lên trên hiệu ứng background */
 }
 
+.asa{
+  filter: var(--invert-img);
+
+}
+
 
 .swiper-container {
   width: 100%;
@@ -406,6 +425,9 @@ img{
   border-radius: .5rem;
 }
 
+.services{
+}
+
 .services__container{
   row-gap: 2.5rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -416,19 +438,21 @@ img{
 }
 
 .services__img{
-  width: 64px;
-  height: 64px;
+  filter: var(--invert-img);
+  width: 300px;
+  height: auto;
   fill: var(--first-color);
   margin-bottom: var(--mb-2);
 }
 
 .services__title{
-  font-size: var(--h3-font-size);
+  font-size: 1.5rem;
   color: var(--title-color);
   margin-bottom: var(--mb-1);
 }
 
 .services__description{
+  font-size: 1.2rem;
   padding: 0 1.5rem;
 }
 
@@ -603,6 +627,7 @@ textarea{
 }
 
 .footer{
+  margin-top: 150px;
   padding-top: 80px;
   border-top: 1px solid var(--title-color);
   align-items: center;
@@ -798,13 +823,14 @@ textarea{
     height: calc(var(--header-height) + 1.5rem);
   }
   .main_item{
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
   }
   .nav__list{
     display: flex;
     align-items: center;
   }
   .nav__item{
+    font-size: 1.1rem;
     margin-left: var(--mb-5);
     margin-bottom: 0;
   }
@@ -844,6 +870,24 @@ textarea{
   }
   .nav-btn {
     display: none;
+  }
+
+  .certificate__container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .image-container{
+    width: 40%;
+  }
+
+  .misson_data{
+    width: 60%;
+  }
+
+  .center{
+    text-align: center;
   }
 }
 
